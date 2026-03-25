@@ -1,0 +1,59 @@
+.card-mentions {
+  background-color: #0b3d2e;
+  border: 0.25rem solid #c4a77d;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 60rem;
+  margin: 0 auto 2rem;
+}
+
+.card-mentions-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #c4a77d;
+  margin-bottom: 0.75rem;
+}
+
+.card-mentions-text {
+  font-family: "Chau Philomene One", sans-serif;
+  font-size: 1rem;
+  color: #e5d5c5;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.card-mentions .accordion-item {
+  background-color: #e5d5c5;
+  border: 2px solid #c4a77d;
+  border-radius: 0.5rem !important;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.card-mentions .accordion-button {
+  background-color: #e5d5c5;
+  color: #0b3d2e;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.card-mentions .accordion-button:not(.collapsed) {
+  background-color: #e5d5c5;
+  color: #0b3d2e;
+  box-shadow: none;
+}
+
+.card-mentions .accordion-button::after {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(30%) saturate(600%) hue-rotate(110deg);
+}
+
+.card-mentions .accordion-body {
+  background-color: #e5d5c5;
+  color: #0b3d2e;
+  font-family: "Chau Philomene One", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
