@@ -1,0 +1,25 @@
+.carousel-slide-in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: slideInFromRight 1s ease forwards;
+}
+
+.carousel-slide-out {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: slideOutToLeft 1s ease forwards;
+}
+
+@keyframes slideInFromRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideOutToLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
