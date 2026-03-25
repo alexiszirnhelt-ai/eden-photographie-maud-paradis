@@ -1,8 +1,12 @@
+import Banner from "../../components/ui/Banner";
+import Title from "../../components/ui/Title";
+
 function Politique() {
   return (
-    <div>
-
-    </div>
+    <main>
+      <Banner />
+      <Title title="Politique de confidentialité" />
+    </main>
   );
 }
 

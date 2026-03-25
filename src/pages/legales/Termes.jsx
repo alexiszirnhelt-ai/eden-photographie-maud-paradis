@@ -1,8 +1,12 @@
+import Banner from "../../components/ui/Banner";
+import Title from "../../components/ui/Title";
+
 function Termes() {
   return (
-    <div>
-
-    </div>
+    <main>
+      <Banner />
+      <Title title="Termes et conditions" />
+    </main>
   );
 }
 
