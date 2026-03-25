@@ -1,8 +1,12 @@
+import Banner from "../../components/ui/Banner";
+import Title from "../../components/ui/Title";
+
 function About() {
   return (
-    <div>
-
-    </div>
+    <main>
+      <Banner />
+      <Title title="À propos" />
+    </main>
   );
 }
 
