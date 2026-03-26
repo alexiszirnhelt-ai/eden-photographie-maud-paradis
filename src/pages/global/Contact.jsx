@@ -7,6 +7,7 @@ import useContactForm from "../../hooks/useContactForm";
 import ModalContact from "../../components/ui/ModalContact";
 import "../../styles/stylespages/Contact.css";
 import "../../styles/responsive/Contact.responsive.css";
+import "../../styles/responsive-tablet/Contact.responsive-tablet.css";
 
 function Contact() {
   const { nom, setNom, tel, setTel, email, setEmail, sujet, setSujet, message, setMessage, error, success, sending, handleSubmit } = useContactForm();

@@ -1,0 +1,22 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+  .portfolio-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .card-portfolio {
+    width: 70vw;
+    max-width: 70vw;
+  }
+
+  .modal-portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .modal-dialog.modal-xl {
+    margin: 0.5rem auto;
+    max-width: 90vw;
+  }
+}

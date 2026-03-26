@@ -9,6 +9,7 @@ import diapo2 from "../../assets/images/Diapo-service/chammbre-hotel-vosges.jpg"
 import diapo3 from "../../assets/images/Diapo-service/photo-appartement-gerardmer.jpg";
 import diapo4 from "../../assets/images/Diapo-service/spa-photo-hotel.jpg";
 import "../../styles/responsive/Services.responsive.css";
+import "../../styles/responsive-tablet/Services.responsive-tablet.css";
 
 function Services() {
   return (

@@ -63,6 +63,7 @@ import hotel14 from "../../assets/images/hotel/4014.jpg";
 import hotel15 from "../../assets/images/hotel/4028.jpg";
 import hotel16 from "../../assets/images/hotel/4037.jpg";
 import "../../styles/responsive/Portfolio.responsive.css";
+import "../../styles/responsive-tablet/Portfolio.responsive-tablet.css";
 
 function Portfolio() {
   return (
