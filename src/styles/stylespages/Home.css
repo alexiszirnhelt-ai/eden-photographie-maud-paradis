@@ -1,5 +1,6 @@
 .banner {
   min-height: 25vh;
+  background-image: linear-gradient(rgba(229, 213, 197, 0.5), rgba(229, 213, 197, 0.5)), url("../../assets/images/banner/Laos-viewpoint-photo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

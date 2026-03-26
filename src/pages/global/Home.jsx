@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import bannerImg from "../../assets/images/banner/Laos-viewpoint-photo.jpg";
 import CardAbout from "../../components/ui/CardAbout";
 import "../../styles/stylespages/Home.css";
 
@@ -8,9 +7,6 @@ function Home() {
     <main>
       <section
         className="banner d-flex flex-column align-items-center justify-content-center text-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(229, 213, 197, 0.5), rgba(229, 213, 197, 0.5)), url(${bannerImg})`,
-        }}
       >
         <h1 className="banner-title">L'Eden Photographie</h1>
         <p className="banner-subtitle">

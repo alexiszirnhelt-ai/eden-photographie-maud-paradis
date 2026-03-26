@@ -24,7 +24,6 @@ function CardMentions({ title, text, articles = [], cardId }) {
               <div
                 id={`collapse-${cardId}-${index}`}
                 className="accordion-collapse collapse"
-                data-bs-parent={`#accordion-${cardId}`}
               >
                 <div className="accordion-body">{article.content}</div>
               </div>

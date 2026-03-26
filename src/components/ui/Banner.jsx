@@ -1,16 +1,11 @@
 import bannerImg from "../../assets/images/banner/Laos-viewpoint-photo.jpg";
+import "../../styles/stylescomponents/Banner.css";
 
 function Banner() {
   return (
     <div
-      className="w-100"
-      style={{
-        backgroundImage: `url(${bannerImg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        height: "10rem",
-      }}
+      className="banner-component"
+      style={{ backgroundImage: `url(${bannerImg})` }}
     ></div>
   );
 }
