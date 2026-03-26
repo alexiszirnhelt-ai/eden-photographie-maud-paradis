@@ -1,0 +1,36 @@
+.modal-contact-content {
+  background-color: #0b3d2e;
+  border: 0.25rem solid #c4a77d;
+  border-radius: 2rem;
+}
+
+.modal-contact-icon {
+  font-size: 3rem;
+  color: #c4a77d;
+}
+
+.modal-contact-title {
+  color: #c4a77d;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.modal-contact-text {
+  color: #e5d5c5;
+  font-family: "Chau Philomene One", sans-serif;
+}
+
+.modal-contact-btn {
+  background-color: #c4a77d;
+  color: #0b3d2e;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  border: none;
+}
+
+.modal-contact-btn:hover {
+  background-color: #0b3d2e;
+  color: #c4a77d;
+  border: 2px solid #c4a77d;
+}
