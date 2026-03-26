@@ -1,4 +1,6 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { EMAILJS_CONFIG } from "../config/emailjs";
 
 function useContactForm() {
   const [nom, setNom] = useState("");
@@ -7,14 +9,43 @@ function useContactForm() {
   const [sujet, setSujet] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [sending, setSending] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
     if (!nom || !tel || !email || !sujet || !message) {
       setError(true);
-    } else {
-      setError(false);
+      return;
     }
+    setError(false);
+    setSending(true);
+
+    emailjs
+      .send(
+        EMAILJS_CONFIG.serviceId,
+        EMAILJS_CONFIG.templateId,
+        {
+          name: nom,
+          phone: tel,
+          email: email,
+          subject: sujet,
+          message: message,
+        },
+        EMAILJS_CONFIG.publicKey
+      )
+      .then(() => {
+        setSuccess(true);
+        setSending(false);
+        setNom("");
+        setTel("");
+        setEmail("");
+        setSujet("");
+        setMessage("");
+      })
+      .catch(() => {
+        setSending(false);
+      });
   }
 
   return {
@@ -24,6 +55,8 @@ function useContactForm() {
     sujet, setSujet,
     message, setMessage,
     error,
+    success,
+    sending,
     handleSubmit,
   };
 }

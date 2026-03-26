@@ -5,7 +5,7 @@ import useContactForm from "../../hooks/useContactForm";
 import "../../styles/stylespages/Contact.css";
 
 function Contact() {
-  const { nom, setNom, tel, setTel, email, setEmail, sujet, setSujet, message, setMessage, error, handleSubmit } = useContactForm();
+  const { nom, setNom, tel, setTel, email, setEmail, sujet, setSujet, message, setMessage, error, success, sending, handleSubmit } = useContactForm();
 
   return (
     <main>
@@ -85,8 +85,8 @@ function Contact() {
             </div>
             <div>
               <div className="text-center">
-                <button type="submit" className="contact-btn">
-                  Envoyer
+                <button type="submit" className="contact-btn" disabled={sending}>
+                  {sending ? "Envoi en cours..." : "Envoyer"}
                 </button>
               </div>
               <p className="text-danger mt-1 mb-0" style={{ fontSize: "0.9rem" }}>
@@ -95,6 +95,11 @@ function Contact() {
               {error && (
                 <p className="text-danger mb-0" style={{ fontSize: "0.9rem" }}>
                   Veuillez remplir tous les champs avant d'envoyer.
+                </p>
+              )}
+              {success && (
+                <p className="mb-0" style={{ fontSize: "0.9rem", color: "#c4a77d" }}>
+                  Votre message a bien été envoyé !
                 </p>
               )}
             </div>
