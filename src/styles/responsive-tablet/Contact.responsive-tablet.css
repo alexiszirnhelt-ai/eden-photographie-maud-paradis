@@ -1,0 +1,16 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-section {
+    width: 90vw;
+    border-radius: 3rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .contact-photo-wrapper {
+    width: 16rem !important;
+  }
+
+  .contact-title {
+    font-size: 1.6rem;
+  }
+}

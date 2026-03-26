@@ -1,0 +1,21 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+  header.navbar {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .navbar-brand img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .nav-menu {
+    gap: 0.5rem !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    width: 115px;
+  }
+}

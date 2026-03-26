@@ -1,6 +1,7 @@
 import ModalPortfolio from "./ModalPortfolio";
 import "../../styles/stylescomponents/CardPortfolio.css";
 import "../../styles/responsive/CardPortfolio.responsive.css";
+import "../../styles/responsive-tablet/Portfolio.responsive-tablet.css";
 
 function CardPortfolio({ photo, title, text, modalId, photos }) {
   return (

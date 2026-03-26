@@ -5,6 +5,7 @@ import aboutImg from "../../assets/images/profile/about-1.JPG";
 import about2Img from "../../assets/images/profile/about-2.JPG";
 import about3Img from "../../assets/images/profile/about-3.JPG";
 import "../../styles/responsive/About.responsive.css";
+import "../../styles/responsive-tablet/About.responsive-tablet.css";
 
 function About() {
   return (

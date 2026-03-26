@@ -1,0 +1,10 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+  .px-footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .footer .d-flex.justify-content-center.flex-wrap {
+    gap: 3rem !important;
+  }
+}
