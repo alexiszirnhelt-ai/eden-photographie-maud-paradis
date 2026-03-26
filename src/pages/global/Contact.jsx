@@ -6,6 +6,7 @@ import contactImg from "../../assets/images/profile/contact-1.JPG";
 import useContactForm from "../../hooks/useContactForm";
 import ModalContact from "../../components/ui/ModalContact";
 import "../../styles/stylespages/Contact.css";
+import "../../styles/responsive/Contact.responsive.css";
 
 function Contact() {
   const { nom, setNom, tel, setTel, email, setEmail, sujet, setSujet, message, setMessage, error, success, sending, handleSubmit } = useContactForm();
@@ -22,7 +23,7 @@ function Contact() {
       <Banner />
       <Title title="Contact" />
       <section className="contact-section d-flex gap-5 align-items-stretch">
-        <div style={{ width: "22rem", flexShrink: 0 }}>
+        <div className="contact-photo-wrapper" style={{ width: "22rem", flexShrink: 0 }}>
           <img
             src={contactImg}
             alt="Contact Eden Photographie"

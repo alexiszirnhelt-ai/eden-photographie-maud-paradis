@@ -62,13 +62,14 @@ import hotel13 from "../../assets/images/hotel/4013.jpg";
 import hotel14 from "../../assets/images/hotel/4014.jpg";
 import hotel15 from "../../assets/images/hotel/4028.jpg";
 import hotel16 from "../../assets/images/hotel/4037.jpg";
+import "../../styles/responsive/Portfolio.responsive.css";
 
 function Portfolio() {
   return (
     <main>
       <Banner />
       <Title title="Portfolio" />
-      <section className="d-flex gap-4 justify-content-center px-5 py-5">
+      <section className="d-flex gap-4 justify-content-center px-5 py-5 portfolio-section">
         <CardPortfolio
           photo={photo1}
           title="Hôtels, et établissements touristiques"

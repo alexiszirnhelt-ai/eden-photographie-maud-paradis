@@ -8,13 +8,14 @@ import diapo1 from "../../assets/images/Diapo-service/airbnb-studio-nancy.jpg";
 import diapo2 from "../../assets/images/Diapo-service/chammbre-hotel-vosges.jpg";
 import diapo3 from "../../assets/images/Diapo-service/photo-appartement-gerardmer.jpg";
 import diapo4 from "../../assets/images/Diapo-service/spa-photo-hotel.jpg";
+import "../../styles/responsive/Services.responsive.css";
 
 function Services() {
   return (
     <main>
       <Banner />
       <Title title="Services" />
-      <section className="d-flex gap-4 justify-content-center px-5 py-5">
+      <section className="d-flex gap-4 justify-content-center px-5 py-5 services-section">
         <CardServices
           photo={photo1}
           title="Photographie"

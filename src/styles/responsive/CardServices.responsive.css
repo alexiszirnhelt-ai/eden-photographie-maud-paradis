@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+  .card-services {
+    width: 95vw;
+    max-width: 95vw;
+  }
+}

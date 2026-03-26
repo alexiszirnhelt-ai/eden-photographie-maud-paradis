@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+  .presentation {
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+    border-radius: 2rem;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    gap: 1.5rem !important;
+  }
+
+  .presentation-photo-wrapper {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .presentation-photo {
+    width: 194px !important;
+    height: 194px !important;
+  }
+
+  .presentation-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+}

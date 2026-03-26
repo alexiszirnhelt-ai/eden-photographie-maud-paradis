@@ -1,4 +1,5 @@
 import "../../styles/stylescomponents/ModalPortfolio.css";
+import "../../styles/responsive/ModalPortfolio.responsive.css";
 
 function ModalPortfolio({ modalId, photos = [] }) {
   return (

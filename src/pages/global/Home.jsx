@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import CardAbout from "../../components/ui/CardAbout";
 import "../../styles/stylespages/Home.css";
+import "../../styles/responsive/Home.responsive.css";
 
 function Home() {
   return (

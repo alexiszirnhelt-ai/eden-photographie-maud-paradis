@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    width: 95vw;
+    border-radius: 2rem;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-photo-wrapper {
+    display: none;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+}
