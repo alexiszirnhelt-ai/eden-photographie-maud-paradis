@@ -1,0 +1,7 @@
+.banner-component {
+  width: 100%;
+  height: 10rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

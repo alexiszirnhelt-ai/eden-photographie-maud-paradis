@@ -1,23 +1,64 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { EMAILJS_CONFIG } from "../config/emailjs";
 
 function useContactForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [nom, setNom] = useState("");
+  const [tel, setTel] = useState("");
+  const [email, setEmail] = useState("");
+  const [sujet, setSujet] = useState("");
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [sending, setSending] = useState(false);
 
-  const [status, setStatus] = useState(null);
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
-  };
+    if (!nom || !tel || !email || !sujet || !message) {
+      setError(true);
+      return;
+    }
+    setError(false);
+    setSending(true);
 
-  return { formData, status, handleChange, handleSubmit };
+    emailjs
+      .send(
+        EMAILJS_CONFIG.serviceId,
+        EMAILJS_CONFIG.templateId,
+        {
+          name: nom,
+          phone: tel,
+          email: email,
+          subject: sujet,
+          message: message,
+        },
+        EMAILJS_CONFIG.publicKey
+      )
+      .then(() => {
+        setSuccess(true);
+        setSending(false);
+        setNom("");
+        setTel("");
+        setEmail("");
+        setSujet("");
+        setMessage("");
+      })
+      .catch(() => {
+        setSending(false);
+      });
+  }
+
+  return {
+    nom, setNom,
+    tel, setTel,
+    email, setEmail,
+    sujet, setSujet,
+    message, setMessage,
+    error,
+    success,
+    sending,
+    handleSubmit,
+  };
 }
 
 export default useContactForm;

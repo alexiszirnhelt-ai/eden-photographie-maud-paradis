@@ -1,0 +1,45 @@
+.banner {
+  min-height: 25vh;
+  background-image: linear-gradient(rgba(229, 213, 197, 0.5), rgba(229, 213, 197, 0.5)), url("../../assets/images/banner/Laos-viewpoint-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.banner-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #0b3d2e;
+}
+
+.banner-subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.75rem;
+  color: #0b3d2e;
+}
+
+.banner-btn {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #c4a77d;
+  background-color: #0b3d2e;
+  border: 0.25rem solid #c4a77d;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  transition: all 300ms ease;
+}
+
+.banner-btn:hover {
+  background-color: #c4a77d;
+  color: #0b3d2e;
+  box-shadow: 0 0 1rem #c4a77d;
+}
+
+.px-section {
+  padding-left: 6.75rem;
+  padding-right: 6.75rem;
+}
