@@ -1,5 +1,6 @@
 import ModalServices from "./ModalServices";
 import "../../styles/stylescomponents/CardServices.css";
+import "../../styles/responsive/CardServices.responsive.css";
 
 function CardServices({ photo, title, text, modalId, modalPhoto, carouselImages, section1Title, section1Text, section2Title, section2Text, imageHeight, modalWidth }) {
   return (

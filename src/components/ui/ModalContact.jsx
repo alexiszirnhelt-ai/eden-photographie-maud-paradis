@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "../../styles/stylescomponents/ModalContact.css";
+import "../../styles/responsive/ModalContact.responsive.css";
 
 function ModalContact() {
   const navigate = useNavigate();

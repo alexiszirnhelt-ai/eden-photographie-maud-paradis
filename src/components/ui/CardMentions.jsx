@@ -1,4 +1,5 @@
 import "../../styles/stylescomponents/CardMentions.css";
+import "../../styles/responsive/CardMentions.responsive.css";
 
 function CardMentions({ title, text, articles = [], cardId }) {
   return (
