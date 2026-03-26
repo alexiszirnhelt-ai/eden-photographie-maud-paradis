@@ -1,11 +1,21 @@
+import { useEffect } from "react";
+import { Modal } from "bootstrap";
 import Banner from "../../components/ui/Banner";
 import Title from "../../components/ui/Title";
 import contactImg from "../../assets/images/profile/contact-1.JPG";
 import useContactForm from "../../hooks/useContactForm";
+import ModalContact from "../../components/ui/ModalContact";
 import "../../styles/stylespages/Contact.css";
 
 function Contact() {
   const { nom, setNom, tel, setTel, email, setEmail, sujet, setSujet, message, setMessage, error, success, sending, handleSubmit } = useContactForm();
+
+  useEffect(() => {
+    if (success) {
+      const modal = new Modal(document.getElementById("modalContact"));
+      modal.show();
+    }
+  }, [success]);
 
   return (
     <main>
@@ -97,15 +107,11 @@ function Contact() {
                   Veuillez remplir tous les champs avant d'envoyer.
                 </p>
               )}
-              {success && (
-                <p className="mb-0" style={{ fontSize: "0.9rem", color: "#c4a77d" }}>
-                  Votre message a bien été envoyé !
-                </p>
-              )}
             </div>
           </form>
         </div>
       </section>
+      <ModalContact />
     </main>
   );
 }
