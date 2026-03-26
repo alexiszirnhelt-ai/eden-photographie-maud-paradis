@@ -13,89 +13,62 @@ function Mentions() {
           title="Définitions"
           text={
             <>
-              <strong>Client</strong> : tout professionnel ou personne physique
-              capable au sens des articles 1123 et suivants du Code civil, ou
-              personne morale, qui visite le Site objet des présentes conditions
-              générales.
-              <br />
-              <br />
-              <strong>Prestations et Services</strong> :
-              http://www.eden-photographie.fr met à disposition des Clients :
-              <br />
-              <br />
-              <strong>Contenu</strong> : Ensemble des éléments constituants l
-              {"'"}information présente sur le Site, notamment textes - images -
-              vidéos.
-              <br />
-              <br />
-              <strong>Informations clients</strong> : Ci après dénommé «
-              Information (s) » qui correspondent à l{"'"}ensemble des données
-              personnelles susceptibles d{"'"}être détenues par
-              http://www.eden-photographie.fr pour la gestion de votre compte,
-              de la gestion de la relation client et à des fins d{"'"}analyses
-              et de statistiques.
-              <br />
-              <br />
-              <strong>Utilisateur</strong> : Internaute se connectant, utilisant
-              le site susnommé.
-              <br />
-              <br />
-              <strong>Informations personnelles</strong> : « Les informations
-              qui permettent, sous quelque forme que ce soit, directement ou
-              non, l{"'"}identification des personnes physiques auxquelles elles
-              s{"'"}appliquent » (article 4 de la loi n° 78-17 du 6 janvier
-              1978).
-              <br />
-              <br />
-              Les termes « données à caractère personnel », « personne concernée
-              », « sous traitant » et « données sensibles » ont le sens défini
-              par le Règlement Général sur la Protection des Données (RGPD : n°
-              2016-679)
+              <strong>Client</strong> : tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.
+              <br /><br />
+              <strong>Prestations et Services</strong> : http://www.eden-photographie.fr met à disposition des Clients :
+              <br /><br />
+              <strong>Contenu</strong> : Ensemble des éléments constituants l{"'"}information présente sur le Site, notamment textes – images – vidéos.
+              <br /><br />
+              <strong>Informations clients</strong> : Ci après dénommé « Information (s) » qui correspondent à l{"'"}ensemble des données personnelles susceptibles d{"'"}être détenues par http://www.eden-photographie.fr pour la gestion de votre compte, de la gestion de la relation client et à des fins d{"'"}analyses et de statistiques.
+              <br /><br />
+              <strong>Utilisateur</strong> : Internaute se connectant, utilisant le site susnommé.
+              <br /><br />
+              <strong>Informations personnelles</strong> : « Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l{"'"}identification des personnes physiques auxquelles elles s{"'"}appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).
+              <br /><br />
+              Les termes « données à caractère personnel », « personne concernée », « sous traitant » et « données sensibles » ont le sens défini par le Règlement Général sur la Protection des Données (RGPD : n° 2016-679)
             </>
           }
           articles={[
             {
-              title: "1. Présentation du site internet.",
+              title: "1. Présentation du site internet",
               content: (
                 <>
-                  En vertu de l{"'"}article 6 de la loi n° 2004-575 du 21 juin
-                  2004 pour la confiance dans l{"'"}économie numérique, il est
-                  précisé aux utilisateurs du site internet
-                  http://www.eden-photographie.fr l{"'"}identité des différents
-                  intervenants dans le cadre de sa réalisation et de son suivi:
+                  En vertu de l{"'"}article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l{"'"}économie numérique, il est précisé aux utilisateurs du site internet http://www.eden-photographie.fr l{"'"}identité des différents intervenants dans le cadre de sa réalisation et de son suivi :
+                  <br /><br />
+                  <strong>Propriétaire :</strong> Artisan Eden photographie Capital social de 0€ – Meurthe et Moselle.
                   <br />
-                  <br />
-                  <strong>Propriétaire</strong> : Artisan Eden photographie
-                  Capital social de 0€ - Meurthe et Moselle.
-                  <br />
-                  <br />
-                  <strong>Responsable publication</strong> : Maud Paradis
-                  Schindler - maud.paradispro@gmail.com
+                  <strong>Responsable publication :</strong> Maud Paradis Schindler – maud.paradispro@gmail.com
                   <br />
                   Le responsable publication est une personne physique.
                   <br />
-                  <br />
-                  <strong>Hébergeur</strong> : WIX - 40 Port de Tel Aviv, Tel
-                  Aviv-Yafo 6350671 Israël +1 415-639-9034
-                  <br />
-                  <br />
-                  Ces mentions légales RGPD sont issues du générateur gratuit
-                  offert par Orson.io
+                  <strong>Hébergeur :</strong> WIX – 40 Port de Tel Aviv, Tel Aviv-Yafo 6350671 Israël +1 415-639-9034
+                  <br /><br />
+                  Ces mentions légales RGPD sont issues du générateur gratuit offert par Orson.io
                 </>
               ),
             },
             {
               title: "2. Conditions générales d'utilisation du site et des services proposés",
-              content: <>
-                Le Site constitue une œuvre de l{"'"}esprit protégée par les dispositions du Code de la Propriété Intellectuelle et des Réglementations Internationales applicables. Le Client ne peut en aucune manière réutiliser, céder ou exploiter pour son propre compte tout ou partie des éléments ou travaux du Site.<br /><br />
-                L{"'"}utilisation du site http://www.eden-photographie.fr implique l{"'"}acceptation pleine et entière des conditions générales d{"'"}utilisation ci-après décrites. Ces conditions d{"'"}utilisation sont susceptibles d{"'"}être modifiées ou complétées à tout moment, les utilisateurs du site http://www.eden-photographie.fr sont donc invités à les consulter de manière régulière.<br /><br />
-                Ce site internet est normalement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par http://www.eden-photographie.fr, qui s{"'"}efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de l{"'"}intervention. Le site web http://www.eden-photographie.fr est mis à jour régulièrement par http://www.eden-photographie.fr responsable. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s{"'"}imposent néanmoins à l{"'"}utilisateur qui est invité à s{"'"}y référer le plus souvent possible afin d{"'"}en prendre connaissance.
-              </>,
+              content: (
+                <>
+                  Le Site constitue une œuvre de l{"'"}esprit protégée par les dispositions du Code de la Propriété Intellectuelle et des Réglementations Internationales applicables. Le Client ne peut en aucune manière réutiliser, céder ou exploiter pour son propre compte tout ou partie des éléments ou travaux du Site.
+                  <br /><br />
+                  L{"'"}utilisation du site http://www.eden-photographie.fr implique l{"'"}acceptation pleine et entière des conditions générales d{"'"}utilisation ci-après décrites. Ces conditions d{"'"}utilisation sont susceptibles d{"'"}être modifiées ou complétées à tout moment, les utilisateurs du site http://www.eden-photographie.fr sont donc invités à les consulter de manière régulière.
+                  <br /><br />
+                  Ce site internet est normalement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par http://www.eden-photographie.fr, qui s{"'"}efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de l{"'"}intervention. Le site web http://www.eden-photographie.fr est mis à jour régulièrement par http://www.eden-photographie.fr responsable. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s{"'"}imposent néanmoins à l{"'"}utilisateur qui est invité à s{"'"}y référer le plus souvent possible afin d{"'"}en prendre connaissance.
+                </>
+              ),
             },
-            { title: "3. Description des services fournis", content: <>
-              Le site internet http://www.eden-photographie.fr a pour objet de fournir une information concernant l{"'"}ensemble des activités de la société. http://www.eden-photographie.fr s{"'"}efforce de fournir sur le site http://www.eden-photographie.fr des informations aussi précises que possible. Toutefois, il ne pourra être tenu responsable des oublis, des inexactitudes et des carences dans la mise à jour, qu{"'"}elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.<br /><br />
-              Toutes les informations indiquées sur le site http://www.eden-photographie.fr sont données à titre indicatif, et sont susceptibles d{"'"}évoluer. Par ailleurs, les renseignements figurant sur le site http://www.eden-photographie.fr ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne.
-            </> },
+            {
+              title: "3. Description des services fournis",
+              content: (
+                <>
+                  Le site internet http://www.eden-photographie.fr a pour objet de fournir une information concernant l{"'"}ensemble des activités de la société. http://www.eden-photographie.fr s{"'"}efforce de fournir sur le site http://www.eden-photographie.fr des informations aussi précises que possible. Toutefois, il ne pourra être tenu responsable des oublis, des inexactitudes et des carences dans la mise à jour, qu{"'"}elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.
+                  <br /><br />
+                  Toutes les informations indiquées sur le site http://www.eden-photographie.fr sont données à titre indicatif, et sont susceptibles d{"'"}évoluer. Par ailleurs, les renseignements figurant sur le site http://www.eden-photographie.fr ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne.
+                </>
+              ),
+            },
             {
               title: "4. Limitations contractuelles sur les données techniques",
               content: (
@@ -189,7 +162,7 @@ function Mentions() {
               ),
             },
             {
-              title: "8. Liens hypertextes et cookies",
+              title: "8. Notification d'incident",
               content: (
                 <>
                   Quels que soient les efforts fournis, aucune méthode de transmission sur Internet et aucune méthode de stockage électronique n{"'"}est complètement sûre. Nous ne pouvons en conséquence pas garantir une sécurité absolue. Si nous prenions connaissance d{"'"}une brèche de la sécurité, nous avertirions les utilisateurs concernés afin qu{"'"}ils puissent prendre les mesures appropriées. Nos procédures de notification d{"'"}incident tiennent compte de nos obligations légales, qu{"'"}elles se situent au niveau national ou européen. Nous nous engageons à informer pleinement nos clients de toutes les questions relevant de la sécurité de leur compte et à leur fournir toutes les informations nécessaires pour les aider à respecter leurs propres obligations réglementaires en matière de reporting.
@@ -201,10 +174,14 @@ function Mentions() {
                   Pour assurer la sécurité et la confidentialité des Données Personnelles et des Données Personnelles de Santé, http://www.eden-photographie.fr utilise des réseaux protégés par des dispositifs standards tels que par pare-feu, la pseudonymisation, l{"'"}encryption et mot de passe.
                   <br /><br />
                   Lors du traitement des Données Personnelles, http://www.eden-photographie.fr prend toutes les mesures raisonnables visant à les protéger contre toute perte, utilisation détournée, accès non autorisé, divulgation, altération ou destruction.
-                  <br /><br />
+                </>
+              ),
+            },
+            {
+              title: "9. Liens hypertextes et balises (\"tags\") internet",
+              content: (
+                <>
                   Le site http://www.eden-photographie.fr contient un certain nombre de liens hypertextes vers d{"'"}autres sites, mis en place avec l{"'"}autorisation de http://www.eden-photographie.fr. Cependant, http://www.eden-photographie.fr n{"'"}a pas la possibilité de vérifier le contenu des sites ainsi visités, et n{"'"}assumera en conséquence aucune responsabilité de ce fait.
-                  <br /><br />
-                  Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez à tout moment désactiver ces cookies et ce gratuitement à partir des possibilités de désactivation qui vous sont offertes et rappelées ci-après, sachant que cela peut réduire ou empêcher l{"'"}accessibilité à tout ou partie des Services proposés par le site.
                   <br /><br />
                   <strong>BALISES ("TAGS") INTERNET</strong>
                   <br /><br />
@@ -219,7 +196,7 @@ function Mentions() {
               ),
             },
             {
-              title: "9. Droit applicable et attribution de juridiction",
+              title: "10. Droit applicable et attribution de juridiction",
               content: (
                 <>
                   Tout litige en relation avec l{"'"}utilisation du site http://www.eden-photographie.fr est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de Nancy.

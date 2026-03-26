@@ -10,13 +10,13 @@ function Footer() {
           <div>
             <h5 className="footer-title">Suivez l'aventure sur nos réseaux sociaux :</h5>
             <div className="d-flex justify-content-center gap-3 mt-3">
-              <a href="https://www.instagram.com" target="_blank" rel="noreferrer" className="footer-link footer-icon">
+              <a href="https://www.instagram.com/l.eden.photographie" target="_blank" rel="noreferrer" className="footer-link footer-icon">
                 <i className="bi bi-instagram fs-4"></i>
               </a>
-              <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="footer-link footer-icon">
+              <a href="https://www.facebook.com/profile.php?id=61576324495698" target="_blank" rel="noreferrer" className="footer-link footer-icon">
                 <i className="bi bi-facebook fs-4"></i>
               </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="footer-link footer-icon">
+              <a href="https://fr.linkedin.com/in/maud-paradis-78a248167" target="_blank" rel="noreferrer" className="footer-link footer-icon">
                 <i className="bi bi-linkedin fs-4"></i>
               </a>
             </div>

@@ -31,16 +31,7 @@ function ModalServices({
   return (
     <div className="modal fade" id={modalId} tabIndex="-1" aria-hidden="true">
       <div className="modal-dialog modal-dialog-centered modal-lg" style={modalWidth ? { maxWidth: modalWidth } : {}}>
-        <div
-          className="modal-content"
-          style={{
-            backgroundColor: "#0b3d2e",
-            color: "#e5d5c5",
-            border: "0.25rem solid #c4a77d",
-            borderRadius: "6.25rem",
-            overflow: "hidden",
-          }}
-        >
+        <div className="modal-content modal-services-content">
           <div className="modal-body p-0">
             <div style={{ position: "relative" }}>
               {carouselImages ? (
@@ -50,52 +41,44 @@ function ModalServices({
                       key={`out-${prevIndex}`}
                       src={carouselImages[prevIndex]}
                       alt={`slide-out-${prevIndex}`}
-                      className="carousel-slide-out"
-                      style={{ height: imageHeight, objectFit: "cover", objectPosition: "center", borderBottom: "0.25rem solid #c4a77d" }}
+                      className="carousel-slide-out modal-services-img"
+                      style={{ height: imageHeight }}
                     />
                   )}
                   <img
                     key={`in-${currentIndex}`}
                     src={carouselImages[currentIndex]}
                     alt={`slide-${currentIndex}`}
-                    className={prevIndex !== null ? "carousel-slide-in" : ""}
-                    style={{ width: "100%", height: imageHeight, objectFit: "cover", objectPosition: "center", borderBottom: "0.25rem solid #c4a77d" }}
+                    className={`modal-services-img${prevIndex !== null ? " carousel-slide-in" : ""}`}
+                    style={{ height: imageHeight }}
                   />
                 </div>
               ) : (
                 <img
                   src={photo}
                   alt={title}
-                  style={{ width: "100%", height: imageHeight, objectFit: "cover", borderBottom: "0.25rem solid #c4a77d" }}
+                  className="modal-services-img"
+                  style={{ height: imageHeight }}
                 />
               )}
               <button
                 type="button"
-                className="btn-close btn-close-white"
+                className="btn-close btn-close-white modal-services-close-btn"
                 data-bs-dismiss="modal"
                 aria-label="Fermer"
-                style={{
-                  position: "absolute",
-                  top: "0.75rem",
-                  right: "0.75rem",
-                  zIndex: 10,
-                }}
               ></button>
             </div>
-            <div className="d-flex gap-3" style={{ padding: "2rem 3rem" }}>
+            <div className="d-flex gap-3 modal-services-body-inner">
               <div className="flex-1 w-50">
-                <h6 className="text-center" style={{ color: "#c4a77d", fontSize: "1.5rem" }}>
-                  {section1Title}
-                </h6>
-                <p className="mb-0" style={{ fontFamily: "'Chau Philomene One', sans-serif" }}>
-                  {section1Text}
-                </p>
+                <h6 className="text-center modal-services-section-title">{section1Title}</h6>
+                <p className="mb-0 modal-services-section-text">{section1Text}</p>
               </div>
-              <div className="flex-1 w-50 align-self-center" style={{ backgroundImage: `url(${borderTarif})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "100% 100%", padding: "2rem 1.5rem" }}>
-                <h6 className="text-center" style={{ color: "#c4a77d", fontSize: "1.5rem" }}>
-                  {section2Title}
-                </h6>
-                <p className="mb-0 text-center" style={{ fontFamily: "'Chau Philomene One', sans-serif" }}>{section2Text}</p>
+              <div
+                className="flex-1 w-50 align-self-center modal-services-tarif"
+                style={{ backgroundImage: `url(${borderTarif})` }}
+              >
+                <h6 className="text-center modal-services-section-title">{section2Title}</h6>
+                <p className="mb-0 text-center modal-services-section-text">{section2Text}</p>
               </div>
             </div>
           </div>
