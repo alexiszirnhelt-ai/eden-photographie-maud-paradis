@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Modal } from "bootstrap";
 import Banner from "../../components/ui/Banner";
 import Title from "../../components/ui/Title";
-import contactImg from "../../assets/images/profile/contact-1.JPG";
+import contactImg from "../../assets/images/profile/contact-1.JPG?format=webp";
 import useContactForm from "../../hooks/useContactForm";
 import ModalContact from "../../components/ui/ModalContact";
 import "../../styles/stylespages/Contact.css";
