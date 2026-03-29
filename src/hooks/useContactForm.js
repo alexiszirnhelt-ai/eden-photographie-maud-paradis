@@ -1,5 +1,4 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import { EMAILJS_CONFIG } from "../config/emailjs";
 
 function useContactForm() {
@@ -12,7 +11,7 @@ function useContactForm() {
   const [success, setSuccess] = useState(false);
   const [sending, setSending] = useState(false);
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     if (!nom || !tel || !email || !sujet || !message) {
       setError(true);
@@ -20,6 +19,8 @@ function useContactForm() {
     }
     setError(false);
     setSending(true);
+
+    const { default: emailjs } = await import("@emailjs/browser");
 
     emailjs
       .send(
