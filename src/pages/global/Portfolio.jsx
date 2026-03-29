@@ -1,15 +1,15 @@
 import Banner from "../../components/ui/Banner";
 import Title from "../../components/ui/Title";
 import CardPortfolio from "../../components/ui/CardPortfolio";
-import photo1 from "../../assets/images/Photo-portfolio/chambre-hotel-gerardmer.jpg?format=webp";
-import photo2 from "../../assets/images/Photo-portfolio/Luxembourg-chateau.jpg?format=webp";
-import photo3 from "../../assets/images/Photo-portfolio/Photo-village-Brioude.jpg?format=webp";
+import photo1 from "../../assets/images/Photo-portfolio/chambre-hotel-gerardmer.webp";
+import photo2 from "../../assets/images/Photo-portfolio/Luxembourg-chateau.webp";
+import photo3 from "../../assets/images/Photo-portfolio/Photo-village-Brioude.webp";
 import "../../styles/responsive/Portfolio.responsive.css";
 import "../../styles/responsive-tablet/Portfolio.responsive-tablet.css";
 
-const hotelGlob = import.meta.glob("../../assets/images/hotel/*.jpg");
-const monumentGlob = import.meta.glob("../../assets/images/monuments/*.jpg");
-const paysageGlob = import.meta.glob("../../assets/images/paysages/*.jpg");
+const hotelGlob = import.meta.glob("../../assets/images/hotel/*.webp");
+const monumentGlob = import.meta.glob("../../assets/images/monuments/*.webp");
+const paysageGlob = import.meta.glob("../../assets/images/paysages/*.webp");
 
 async function loadGlob(glob) {
   const modules = await Promise.all(Object.values(glob).map((fn) => fn()));
