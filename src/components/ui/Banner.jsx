@@ -1,4 +1,4 @@
-import bannerImg from "../../assets/images/banner/Laos-viewpoint-photo.jpg";
+import bannerImg from "../../assets/images/banner/Laos-viewpoint-photo.webp";
 import "../../styles/stylescomponents/Banner.css";
 import "../../styles/responsive/Banner.responsive.css";
 

@@ -1,13 +1,13 @@
+.modal-portfolio-content .modal-body {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
 .modal-portfolio-content {
   background-color: #0b3d2e;
   border: 0.25rem solid #c4a77d;
   border-radius: 2rem;
   overflow: hidden;
-}
-
-.modal-portfolio-content .modal-body {
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior: contain;
 }
 
 .modal-portfolio-grid {

@@ -1,13 +1,13 @@
 import Banner from "../../components/ui/Banner";
 import Title from "../../components/ui/Title";
 import CardServices from "../../components/ui/CardServices";
-import photo1 from "../../assets/images/hotel/3959.jpg";
-import photo2 from "../../assets/images/Photo-services/Chateau-haroue-photo.jpg";
-import photo3 from "../../assets/images/Photo-services/service-profile-3.jpg";
-import diapo1 from "../../assets/images/Diapo-service/airbnb-studio-nancy.jpg";
-import diapo2 from "../../assets/images/Diapo-service/chammbre-hotel-vosges.jpg";
-import diapo3 from "../../assets/images/Diapo-service/photo-appartement-gerardmer.jpg";
-import diapo4 from "../../assets/images/Diapo-service/spa-photo-hotel.jpg";
+import photo1 from "../../assets/images/hotel/3959.webp";
+import photo2 from "../../assets/images/Photo-services/Chateau-haroue-photo.webp";
+import photo3 from "../../assets/images/Photo-services/service-profile-3.webp";
+import diapo1 from "../../assets/images/Diapo-service/airbnb-studio-nancy.webp";
+import diapo2 from "../../assets/images/Diapo-service/chammbre-hotel-vosges.webp";
+import diapo3 from "../../assets/images/Diapo-service/photo-appartement-gerardmer.webp";
+import diapo4 from "../../assets/images/Diapo-service/spa-photo-hotel.webp";
 import "../../styles/responsive/Services.responsive.css";
 import "../../styles/responsive-tablet/Services.responsive-tablet.css";
 
