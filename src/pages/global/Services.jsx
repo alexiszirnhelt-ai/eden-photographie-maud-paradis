@@ -18,6 +18,7 @@ function Services() {
       <Title title="Services" />
       <section className="d-flex gap-4 justify-content-center px-5 py-5 services-section">
         <CardServices
+          animationClass="card-anim-left"
           photo={photo1}
           title="Photographie"
           text="Valorisez votre établissement avec une banque d'image de photos professionnelles prêtes à être utilisées pour votre communication digitale."
@@ -34,6 +35,7 @@ function Services() {
           section2Text="À partir de 400€"
         />
         <CardServices
+          animationClass="card-anim-bottom"
           photo={photo2}
           title="Vidéographie"
           text="Créez des vidéos engageantes pour présenter votre établissement touristique et séduire vos clients sur vos supports digitaux et réseaux sociaux."
@@ -54,6 +56,7 @@ function Services() {
           modalWidth="70rem"
         />
         <CardServices
+          animationClass="card-anim-right"
           photo={photo3}
           title="Community Manager"
           text="Bénéficiez d'une communication digitale clé en main complète et stratégique avec création de contenu professionnel, optimisation des réseaux sociaux et gestion de votre présence en ligne."

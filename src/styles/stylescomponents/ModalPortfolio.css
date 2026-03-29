@@ -5,6 +5,11 @@
   overflow: hidden;
 }
 
+.modal-portfolio-content .modal-body {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
 .modal-portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

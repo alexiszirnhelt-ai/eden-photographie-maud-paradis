@@ -3,6 +3,7 @@ import CardAbout from "../../components/ui/CardAbout";
 import "../../styles/stylespages/Home.css";
 import "../../styles/responsive/Home.responsive.css";
 import "../../styles/responsive-tablet/Home.responsive-tablet.css";
+import "../../styles/animation/Home.animation.css";
 
 function Home() {
   return (
@@ -10,16 +11,16 @@ function Home() {
       <section
         className="banner d-flex flex-column align-items-center justify-content-center text-center"
       >
-        <h1 className="banner-title">L'Eden Photographie</h1>
-        <p className="banner-subtitle">
+        <h1 className="banner-title animate-from-top">L'Eden Photographie</h1>
+        <p className="banner-subtitle animate-from-top-delay">
           Photographe, vidéaste et community manager tourisme
         </p>
-        <NavLink to="/contact" className="btn banner-btn mt-3">
+        <NavLink to="/contact" className="btn banner-btn mt-3 animate-from-bottom">
           Avoir un devis
         </NavLink>
       </section>
 
-      <CardAbout title="Maud Paradis">
+      <CardAbout title="Maud Paradis" animated>
         <p className="presentation-text">
           Je suis photographe, vidéaste et community manager spécialisée dans
           le tourisme, basée à Nancy dans le Grand Est.

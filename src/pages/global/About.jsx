@@ -12,7 +12,7 @@ function About() {
     <main>
       <Banner />
       <Title title="À propos" />
-      <CardAbout grow photoSize={286} photo={aboutImg} objectPosition="center 50%">
+      <CardAbout grow animated photoSize={286} photo={aboutImg} objectPosition="center 50%">
         <p className="presentation-text">
           Depuis toute petite, j'ai toujours eu un appareil photo entre les
           mains. La photographie est une véritable passion qui ne m'a jamais
@@ -27,7 +27,7 @@ function About() {
           vivre pleinement de ma passion et de fonder L'Eden Photographie.
         </p>
       </CardAbout>
-      <CardAbout grow photoSize={286} photo={about2Img} objectPosition="center 100%">
+      <CardAbout grow animated photoSize={286} photo={about2Img} objectPosition="center 100%">
         <p className="presentation-text">
           En observant le secteur, j'ai constaté que de nombreux établissements
           touristiques manquaient de présence en ligne et avaient du mal à
@@ -39,7 +39,7 @@ function About() {
           manière stratégique pour attirer et fidéliser leurs clients.
         </p>
       </CardAbout>
-      <CardAbout grow photoSize={286} photo={about3Img} objectPosition="center 30%">
+      <CardAbout grow animated photoSize={286} photo={about3Img} objectPosition="center 30%">
         <p className="presentation-text">
           Créative et légèrement perfectionniste, j'aime repousser mes limites
           pour atteindre le meilleur résultat possible. Je travaille avec
