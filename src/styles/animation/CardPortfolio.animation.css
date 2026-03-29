@@ -1,0 +1,24 @@
+.card-anim-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.card-anim-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.card-anim-bottom {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.card-anim-left.is-visible,
+.card-anim-right.is-visible,
+.card-anim-bottom.is-visible {
+  opacity: 1;
+  transform: translate(0);
+}

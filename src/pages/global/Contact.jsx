@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Modal } from "bootstrap";
 import Banner from "../../components/ui/Banner";
 import Title from "../../components/ui/Title";
@@ -8,9 +8,11 @@ import ModalContact from "../../components/ui/ModalContact";
 import "../../styles/stylespages/Contact.css";
 import "../../styles/responsive/Contact.responsive.css";
 import "../../styles/responsive-tablet/Contact.responsive-tablet.css";
+import "../../styles/animation/Contact.animation.css";
 
 function Contact() {
   const { nom, setNom, tel, setTel, email, setEmail, sujet, setSujet, message, setMessage, error, success, sending, handleSubmit } = useContactForm();
+  const sectionRef = useRef(null);
 
   useEffect(() => {
     if (success) {
@@ -19,12 +21,27 @@ function Contact() {
     }
   }, [success]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll(".contact-anim-left, .contact-anim-right")
+            .forEach((el) => el.classList.add("is-visible"));
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.2 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <main>
       <Banner />
       <Title title="Contact" />
-      <section className="contact-section d-flex gap-5 align-items-stretch">
-        <div className="contact-photo-wrapper" style={{ width: "22rem", flexShrink: 0 }}>
+      <section ref={sectionRef} className="contact-section d-flex gap-5 align-items-stretch">
+        <div className="contact-photo-wrapper contact-anim-left" style={{ width: "22rem", flexShrink: 0 }}>
           <img
             src={contactImg}
             alt="Contact Eden Photographie"
@@ -32,7 +49,7 @@ function Contact() {
             style={{ width: "100%", height: "100%" }}
           />
         </div>
-        <div className="d-flex flex-column justify-content-center w-100">
+        <div className="contact-anim-right d-flex flex-column justify-content-center w-100">
           <h2 className="contact-title mb-4">Envoyer-moi un message</h2>
           <form className="d-flex flex-column gap-3" onSubmit={handleSubmit}>
             <div>

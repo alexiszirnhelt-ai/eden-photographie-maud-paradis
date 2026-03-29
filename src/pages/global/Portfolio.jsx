@@ -72,6 +72,7 @@ function Portfolio() {
       <Title title="Portfolio" />
       <section className="d-flex gap-4 justify-content-center px-5 py-5 portfolio-section">
         <CardPortfolio
+          animationClass="card-anim-left"
           photo={photo1}
           title="Hôtels, et établissements touristiques"
           text="Découvrez mes reportages photo réalisés pour hôtels, gîtes, domaines, lodges, maisons d'hôtes et restaurants, mettant en valeur les lieux, l'ambiance et l'expérience client."
@@ -79,6 +80,7 @@ function Portfolio() {
           photos={[hotel1, hotel2, hotel3, hotel4, hotel5, hotel6, hotel7, hotel8, hotel9, hotel10, hotel11, hotel12, hotel13, hotel14, hotel15, hotel16]}
         />
         <CardPortfolio
+          animationClass="card-anim-bottom"
           photo={photo2}
           title="Monuments & Patrimoine"
           text="Explorez mes photographies de monuments, villes et lieux emblématiques, capturant l'architecture et l'histoire des destinations."
@@ -86,6 +88,7 @@ function Portfolio() {
           photos={[monument1, monument2, monument3, monument4, monument5, monument6, monument7, monument8, monument9, monument10, monument11, monument12, monument13, monument14, monument15, monument16, monument17, monument18, monument19, monument20, monument21]}
         />
         <CardPortfolio
+          animationClass="card-anim-right"
           photo={photo3}
           title="Paysages & Destinations"
           text="Découvrez mes photographies de paysages et destinations à travers le monde, entre nature, cultures et instants de vie qui font l'âme du voyage."
