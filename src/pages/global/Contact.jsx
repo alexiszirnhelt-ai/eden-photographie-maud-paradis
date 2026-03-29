@@ -1,5 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { Modal } from "bootstrap";
+import useScrollAnimation from "../../hooks/useScrollAnimation";
 import Banner from "../../components/ui/Banner";
 import Title from "../../components/ui/Title";
 import contactImg from "../../assets/images/profile/contact-1.JPG?format=webp";
@@ -12,7 +13,9 @@ import "../../styles/animation/Contact.animation.css";
 
 function Contact() {
   const { nom, setNom, tel, setTel, email, setEmail, sujet, setSujet, message, setMessage, error, success, sending, handleSubmit } = useContactForm();
-  const sectionRef = useRef(null);
+  const sectionRef = useScrollAnimation({
+    selector: ".contact-anim-left, .contact-anim-right",
+  });
 
   useEffect(() => {
     if (success) {
@@ -20,21 +23,6 @@ function Contact() {
       modal.show();
     }
   }, [success]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.querySelectorAll(".contact-anim-left, .contact-anim-right")
-            .forEach((el) => el.classList.add("is-visible"));
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.2 }
-    );
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <main>

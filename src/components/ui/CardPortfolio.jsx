@@ -1,4 +1,5 @@
-import { useRef, useEffect, useState } from "react";
+import { memo, useState } from "react";
+import useScrollAnimation from "../../hooks/useScrollAnimation";
 import ModalPortfolio from "./ModalPortfolio";
 import "../../styles/stylescomponents/CardPortfolio.css";
 import "../../styles/responsive/CardPortfolio.responsive.css";
@@ -6,23 +7,8 @@ import "../../styles/responsive-tablet/Portfolio.responsive-tablet.css";
 import "../../styles/animation/CardPortfolio.animation.css";
 
 function CardPortfolio({ photo, title, text, modalId, photosLoader, animationClass }) {
-  const cardRef = useRef(null);
+  const cardRef = useScrollAnimation({ enabled: !!animationClass });
   const [photos, setPhotos] = useState([]);
-
-  useEffect(() => {
-    if (!animationClass) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.2 }
-    );
-    if (cardRef.current) observer.observe(cardRef.current);
-    return () => observer.disconnect();
-  }, [animationClass]);
 
   async function handleOpenModal() {
     if (photos.length === 0 && photosLoader) {
@@ -55,4 +41,4 @@ function CardPortfolio({ photo, title, text, modalId, photosLoader, animationCla
   );
 }
 
-export default CardPortfolio;
+export default memo(CardPortfolio);

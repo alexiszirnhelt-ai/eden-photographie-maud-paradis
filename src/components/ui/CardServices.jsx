@@ -1,4 +1,5 @@
-import { useRef, useEffect } from "react";
+import { memo } from "react";
+import useScrollAnimation from "../../hooks/useScrollAnimation";
 import ModalServices from "./ModalServices";
 import "../../styles/stylescomponents/CardServices.css";
 import "../../styles/responsive/CardServices.responsive.css";
@@ -6,22 +7,7 @@ import "../../styles/responsive-tablet/Services.responsive-tablet.css";
 import "../../styles/animation/CardServices.animation.css";
 
 function CardServices({ photo, title, text, modalId, modalPhoto, carouselImages, section1Title, section1Text, section2Title, section2Text, imageHeight, modalWidth, animationClass }) {
-  const cardRef = useRef(null);
-
-  useEffect(() => {
-    if (!animationClass) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.2 }
-    );
-    if (cardRef.current) observer.observe(cardRef.current);
-    return () => observer.disconnect();
-  }, [animationClass]);
+  const cardRef = useScrollAnimation({ enabled: !!animationClass });
 
   return (
     <>
@@ -57,4 +43,4 @@ function CardServices({ photo, title, text, modalId, modalPhoto, carouselImages,
   );
 }
 
-export default CardServices;
+export default memo(CardServices);
