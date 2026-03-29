@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import profileImg from "../../assets/images/profile/profile-1.JPG";
+import profileImg from "../../assets/images/profile/profile-1.JPG?format=webp";
 import circleGold from "../../assets/svg/circle-gold.svg";
 import "../../styles/stylescomponents/CardAbout.css";
 import "../../styles/animation/CardAbout.animation.css";
@@ -35,8 +35,9 @@ function CardAbout({ title, children, photoSize = 433, photo = profileImg, objec
           alt="Maud Paradis"
           className="presentation-photo"
           style={{ width: wrapperSize - 6, height: wrapperSize - 6, objectPosition }}
+          loading="lazy"
         />
-        <img src={circleGold} alt="" className="presentation-photo-circle" />
+        <img src={circleGold} alt="" className="presentation-photo-circle" loading="lazy" />
       </div>
       <div className={animated ? "animate-from-right" : ""}>
         {title && <h2 className="presentation-title">{title}</h2>}
