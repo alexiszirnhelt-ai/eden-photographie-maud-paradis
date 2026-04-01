@@ -69,10 +69,10 @@ function ModalServices({
               )}
               <button
                 type="button"
-                className="btn-close btn-close-white modal-services-close-btn"
+                className="modal-services-close-btn"
                 data-bs-dismiss="modal"
                 aria-label="Fermer"
-              ></button>
+              >✕</button>
             </div>
             <div className="d-flex gap-3 modal-services-body-inner">
               <div className="flex-1 w-50">

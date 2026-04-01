@@ -50,6 +50,17 @@
   filter: brightness(0) saturate(100%) invert(18%) sepia(30%) saturate(600%) hue-rotate(110deg);
 }
 
+.card-mentions .accordion-collapse.collapse {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.card-mentions .accordion-collapse.collapse.show {
+  max-height: 1000px;
+}
+
 .card-mentions .accordion-body {
   background-color: #e5d5c5;
   color: #0b3d2e;
