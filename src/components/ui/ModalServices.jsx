@@ -43,6 +43,7 @@ function ModalServices({
                       alt={`slide-out-${prevIndex}`}
                       className="carousel-slide-out modal-services-img"
                       style={{ height: imageHeight }}
+                      loading="lazy"
                     />
                   )}
                   <img
@@ -51,6 +52,7 @@ function ModalServices({
                     alt={`slide-${currentIndex}`}
                     className={`modal-services-img${prevIndex !== null ? " carousel-slide-in" : ""}`}
                     style={{ height: imageHeight }}
+                    loading="lazy"
                   />
                 </div>
               ) : (
@@ -59,6 +61,7 @@ function ModalServices({
                   alt={title}
                   className="modal-services-img"
                   style={{ height: imageHeight }}
+                  loading="lazy"
                 />
               )}
               <button

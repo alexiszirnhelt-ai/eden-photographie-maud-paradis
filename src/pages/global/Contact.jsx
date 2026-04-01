@@ -32,6 +32,9 @@ function Contact() {
             alt="Contact Eden Photographie"
             className="contact-photo"
             style={{ width: "100%", height: "100%" }}
+            loading="lazy"
+            width="352"
+            height="100%"
           />
         </div>
         <div className="contact-anim-right d-flex flex-column justify-content-center w-100">
