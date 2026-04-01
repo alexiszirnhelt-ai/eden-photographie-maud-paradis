@@ -82,18 +82,21 @@
   opacity: 0;
   transform: translateX(-80px);
   transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
 }
 
 .contact-anim-right {
   opacity: 0;
   transform: translateX(80px);
   transition: opacity 0.9s ease 0.2s, transform 0.9s ease 0.2s;
+  will-change: opacity, transform;
 }
 
 .contact-anim-left.is-visible,
 .contact-anim-right.is-visible {
   opacity: 1;
   transform: translateX(0);
+  will-change: auto;
 }
 
 @media (max-width: 768px) {

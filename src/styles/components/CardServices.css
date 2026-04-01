@@ -61,18 +61,21 @@
   opacity: 0;
   transform: translateX(-80px);
   transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
 }
 
 .card-anim-right {
   opacity: 0;
   transform: translateX(80px);
   transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
 }
 
 .card-anim-bottom {
   opacity: 0;
   transform: translateY(80px);
   transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
 }
 
 .card-anim-left.is-visible,
@@ -80,6 +83,7 @@
 .card-anim-bottom.is-visible {
   opacity: 1;
   transform: translate(0);
+  will-change: auto;
 }
 
 @media (max-width: 768px) {
