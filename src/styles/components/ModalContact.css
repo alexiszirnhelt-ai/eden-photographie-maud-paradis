@@ -34,3 +34,10 @@
   color: #c4a77d;
   border: 2px solid #c4a77d;
 }
+
+@media (max-width: 768px) {
+  .modal-dialog:has(.modal-contact-content) {
+    margin: 0.5rem auto;
+    max-width: 90vw;
+  }
+}

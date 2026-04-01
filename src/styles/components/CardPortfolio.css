@@ -54,3 +54,39 @@
   color: #0b3d2e;
   box-shadow: 0 0 1rem #c4a77d;
 }
+
+.card-anim-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.card-anim-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.card-anim-bottom {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.card-anim-left.is-visible,
+.card-anim-right.is-visible,
+.card-anim-bottom.is-visible {
+  opacity: 1;
+  transform: translate(0);
+  will-change: auto;
+}
+
+@media (max-width: 768px) {
+  .card-portfolio {
+    width: 95vw;
+    max-width: 95vw;
+  }
+}

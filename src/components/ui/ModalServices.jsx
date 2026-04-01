@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import borderTarif from "../../assets/svg/Border-tarif.svg";
-import "../../styles/stylescomponents/ModalServices.css";
-import "../../styles/responsive/ModalServices.responsive.css";
+import "../../styles/components/ModalServices.css";
 
 function ModalServices({
   modalId,
@@ -44,6 +43,8 @@ function ModalServices({
                       alt={`slide-out-${prevIndex}`}
                       className="carousel-slide-out modal-services-img"
                       style={{ height: imageHeight }}
+                      loading="lazy"
+                      decoding="async"
                     />
                   )}
                   <img
@@ -52,6 +53,8 @@ function ModalServices({
                     alt={`slide-${currentIndex}`}
                     className={`modal-services-img${prevIndex !== null ? " carousel-slide-in" : ""}`}
                     style={{ height: imageHeight }}
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               ) : (
@@ -60,6 +63,8 @@ function ModalServices({
                   alt={title}
                   className="modal-services-img"
                   style={{ height: imageHeight }}
+                  loading="lazy"
+                  decoding="async"
                 />
               )}
               <button

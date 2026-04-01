@@ -8,8 +8,7 @@ import diapo1 from "../../assets/images/Diapo-service/airbnb-studio-nancy.webp";
 import diapo2 from "../../assets/images/Diapo-service/chammbre-hotel-vosges.webp";
 import diapo3 from "../../assets/images/Diapo-service/photo-appartement-gerardmer.webp";
 import diapo4 from "../../assets/images/Diapo-service/spa-photo-hotel.webp";
-import "../../styles/responsive/Services.responsive.css";
-import "../../styles/responsive-tablet/Services.responsive-tablet.css";
+import "../../styles/pages/Services.css";
 
 function Services() {
   return (

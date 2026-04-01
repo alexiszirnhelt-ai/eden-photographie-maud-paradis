@@ -65,3 +65,23 @@
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
 }
+
+@media (max-width: 768px) {
+  .modal-services-content {
+    border-radius: 2rem;
+  }
+
+  .modal-services-body-inner {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+
+  .modal-services-body-inner > div {
+    width: 100% !important;
+  }
+
+  .modal-dialog {
+    margin: 0.5rem auto;
+    max-width: 95vw !important;
+  }
+}

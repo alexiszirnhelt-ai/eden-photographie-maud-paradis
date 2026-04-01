@@ -2,8 +2,7 @@ import { memo } from "react";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
 import profileImg from "../../assets/images/profile/profile-1.JPG?format=webp";
 import circleGold from "../../assets/svg/circle-gold.svg";
-import "../../styles/stylescomponents/CardAbout.css";
-import "../../styles/animation/CardAbout.animation.css";
+import "../../styles/components/CardAbout.css";
 
 function CardAbout({ title, children, photoSize = 433, photo = profileImg, objectPosition = "center 80%", grow = false, animated = false }) {
   const sectionRef = useScrollAnimation({
@@ -24,8 +23,9 @@ function CardAbout({ title, children, photoSize = 433, photo = profileImg, objec
           className="presentation-photo"
           style={{ width: wrapperSize - 6, height: wrapperSize - 6, objectPosition }}
           loading="lazy"
+          decoding="async"
         />
-        <img src={circleGold} alt="" className="presentation-photo-circle" loading="lazy" />
+        <img src={circleGold} alt="" className="presentation-photo-circle" loading="lazy" decoding="async" />
       </div>
       <div className={animated ? "animate-from-right" : ""}>
         {title && <h2 className="presentation-title">{title}</h2>}

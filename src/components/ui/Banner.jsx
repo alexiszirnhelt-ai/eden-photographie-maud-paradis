@@ -1,13 +1,18 @@
 import bannerImg from "../../assets/images/banner/Laos-viewpoint-photo.webp";
-import "../../styles/stylescomponents/Banner.css";
-import "../../styles/responsive/Banner.responsive.css";
+import "../../styles/components/Banner.css";
 
 function Banner() {
   return (
-    <div
-      className="banner-component"
-      style={{ backgroundImage: `url(${bannerImg})` }}
-    ></div>
+    <div className="banner-component">
+      <img
+        src={bannerImg}
+        alt=""
+        className="banner-img"
+        fetchpriority="high"
+        width="1920"
+        height="160"
+      />
+    </div>
   );
 }
 

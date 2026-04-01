@@ -5,6 +5,8 @@
   border: 0.25rem solid #c4a77d;
   border-radius: 6.25rem;
   padding: 3rem;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 400px;
 }
 
 .contact-photo {
@@ -76,4 +78,61 @@
   background-color: #c4a77d;
   color: #0b3d2e;
   box-shadow: 0 0 1rem #c4a77d;
+}
+
+.contact-anim-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.contact-anim-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 0.9s ease 0.2s, transform 0.9s ease 0.2s;
+  will-change: opacity, transform;
+}
+
+.contact-anim-left.is-visible,
+.contact-anim-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+  will-change: auto;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    width: 95vw;
+    border-radius: 2rem;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-photo-wrapper {
+    display: none;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-section {
+    width: 90vw;
+    border-radius: 3rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .contact-photo-wrapper {
+    width: 16rem !important;
+  }
+
+  .contact-title {
+    font-size: 1.6rem;
+  }
 }

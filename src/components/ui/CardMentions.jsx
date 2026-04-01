@@ -1,6 +1,4 @@
-import "../../styles/stylescomponents/CardMentions.css";
-import "../../styles/responsive/CardMentions.responsive.css";
-import "../../styles/responsive-tablet/CardMentions.responsive-tablet.css";
+import "../../styles/components/CardMentions.css";
 
 function CardMentions({ title, text, articles = [], cardId }) {
   return (
