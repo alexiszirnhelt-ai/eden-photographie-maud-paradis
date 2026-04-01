@@ -4,8 +4,7 @@ import CardPortfolio from "../../components/ui/CardPortfolio";
 import photo1 from "../../assets/images/Photo-portfolio/chambre-hotel-gerardmer.webp";
 import photo2 from "../../assets/images/Photo-portfolio/Luxembourg-chateau.webp";
 import photo3 from "../../assets/images/Photo-portfolio/Photo-village-Brioude.webp";
-import "../../styles/responsive/Portfolio.responsive.css";
-import "../../styles/responsive-tablet/Portfolio.responsive-tablet.css";
+import "../../styles/pages/Portfolio.css";
 
 const hotelGlob = import.meta.glob("../../assets/images/hotel/*.webp");
 const monumentGlob = import.meta.glob("../../assets/images/monuments/*.webp");

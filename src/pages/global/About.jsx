@@ -4,8 +4,7 @@ import CardAbout from "../../components/ui/CardAbout";
 import aboutImg from "../../assets/images/profile/about-1.JPG?format=webp";
 import about2Img from "../../assets/images/profile/about-2.JPG?format=webp";
 import about3Img from "../../assets/images/profile/about-3.JPG?format=webp";
-import "../../styles/responsive/About.responsive.css";
-import "../../styles/responsive-tablet/About.responsive-tablet.css";
+import "../../styles/pages/About.css";
 
 function About() {
   return (

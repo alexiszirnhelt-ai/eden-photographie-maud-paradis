@@ -1,0 +1,94 @@
+.card-services {
+  background-color: #0b3d2e;
+  border: 0.25rem solid #c4a77d;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  flex: 1;
+  max-width: 342px;
+  transition:
+    box-shadow 300ms ease,
+    transform 300ms ease;
+}
+
+.card-services:hover,
+.card-services.is-visible:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+}
+
+.card-services-img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  border-bottom: 0.25rem solid #c4a77d;
+}
+
+.card-services-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c4a77d;
+  text-align: center;
+}
+
+.card-services-text {
+  font-family: "Chau Philomene One", sans-serif;
+  font-size: 1rem;
+  color: #e5d5c5;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.card-services-btn {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #c4a77d;
+  background-color: transparent;
+  border: 1px solid #c4a77d;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  transition: all 300ms ease;
+}
+
+.card-services-btn:hover {
+  background-color: #c4a77d;
+  color: #0b3d2e;
+  box-shadow: 0 0 1rem #c4a77d;
+}
+
+.card-anim-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.card-anim-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.card-anim-bottom {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.card-anim-left.is-visible,
+.card-anim-right.is-visible,
+.card-anim-bottom.is-visible {
+  opacity: 1;
+  transform: translate(0);
+  will-change: auto;
+}
+
+@media (max-width: 768px) {
+  .card-services {
+    width: 95vw;
+    max-width: 95vw;
+  }
+}

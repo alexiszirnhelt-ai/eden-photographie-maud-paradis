@@ -1,5 +1,4 @@
-import "../../styles/stylescomponents/ModalPortfolio.css";
-import "../../styles/responsive/ModalPortfolio.responsive.css";
+import "../../styles/components/ModalPortfolio.css";
 
 function ModalPortfolio({ modalId, photos = [] }) {
   return (
@@ -23,6 +22,7 @@ function ModalPortfolio({ modalId, photos = [] }) {
                   alt={`portfolio-${index}`}
                   className="modal-portfolio-img"
                   loading="lazy"
+                  decoding="async"
                 />
               ))}
             </div>
