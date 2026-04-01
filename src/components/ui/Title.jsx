@@ -1,7 +1,5 @@
 import lineImg from "../../assets/svg/Line.svg";
-import "../../styles/stylescomponents/Title.css";
-import "../../styles/responsive/Title.responsive.css";
-import "../../styles/animation/Title.animation.css";
+import "../../styles/components/Title.css";
 
 function Title({ title }) {
   return (

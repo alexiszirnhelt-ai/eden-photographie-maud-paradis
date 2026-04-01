@@ -1,8 +1,0 @@
-@media (max-width: 768px) {
-  .services-section {
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem 1rem;
-    gap: 2rem;
-  }
-}

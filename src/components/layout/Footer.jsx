@@ -1,7 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "../../styles/stylescomponents/Footer.css";
-import "../../styles/responsive/Footer.responsive.css";
-import "../../styles/responsive-tablet/Footer.responsive-tablet.css";
+import "../../styles/components/Footer.css";
 
 function Footer() {
   return (

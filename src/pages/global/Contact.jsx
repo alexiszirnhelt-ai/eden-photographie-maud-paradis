@@ -6,10 +6,7 @@ import Title from "../../components/ui/Title";
 import contactImg from "../../assets/images/profile/contact-1.JPG?format=webp";
 import useContactForm from "../../hooks/useContactForm";
 import ModalContact from "../../components/ui/ModalContact";
-import "../../styles/stylespages/Contact.css";
-import "../../styles/responsive/Contact.responsive.css";
-import "../../styles/responsive-tablet/Contact.responsive-tablet.css";
-import "../../styles/animation/Contact.animation.css";
+import "../../styles/pages/Contact.css";
 
 function Contact() {
   const { nom, setNom, tel, setTel, email, setEmail, sujet, setSujet, message, setMessage, errors, success, sending, handleSubmit } = useContactForm();

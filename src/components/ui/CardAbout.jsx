@@ -2,8 +2,7 @@ import { memo } from "react";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
 import profileImg from "../../assets/images/profile/profile-1.JPG?format=webp";
 import circleGold from "../../assets/svg/circle-gold.svg";
-import "../../styles/stylescomponents/CardAbout.css";
-import "../../styles/animation/CardAbout.animation.css";
+import "../../styles/components/CardAbout.css";
 
 function CardAbout({ title, children, photoSize = 433, photo = profileImg, objectPosition = "center 80%", grow = false, animated = false }) {
   const sectionRef = useScrollAnimation({

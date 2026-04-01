@@ -63,3 +63,25 @@
   color: #e5d5c5;
   line-height: 1.8;
 }
+
+.animate-from-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-from-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 0.9s ease 0.2s, transform 0.9s ease 0.2s;
+}
+
+.animate-from-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-from-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}

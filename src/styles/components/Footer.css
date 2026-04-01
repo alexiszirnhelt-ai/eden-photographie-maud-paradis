@@ -33,3 +33,32 @@
 .footer-icon:hover {
   filter: drop-shadow(0 0 0.5rem #c4a77d);
 }
+
+@media (max-width: 768px) {
+  .px-footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer .d-flex.justify-content-center.flex-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem !important;
+    text-align: center;
+  }
+
+  .footer ul {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .px-footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .footer .d-flex.justify-content-center.flex-wrap {
+    gap: 3rem !important;
+  }
+}

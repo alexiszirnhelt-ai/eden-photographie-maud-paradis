@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import borderTarif from "../../assets/svg/Border-tarif.svg";
-import "../../styles/stylescomponents/ModalServices.css";
-import "../../styles/responsive/ModalServices.responsive.css";
+import "../../styles/components/ModalServices.css";
 
 function ModalServices({
   modalId,

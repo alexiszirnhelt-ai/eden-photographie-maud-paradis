@@ -1,6 +1,5 @@
 import bannerImg from "../../assets/images/banner/Laos-viewpoint-photo.webp";
-import "../../styles/stylescomponents/Banner.css";
-import "../../styles/responsive/Banner.responsive.css";
+import "../../styles/components/Banner.css";
 
 function Banner() {
   return (

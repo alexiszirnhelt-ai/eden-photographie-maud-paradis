@@ -1,10 +1,7 @@
 import { memo, useState } from "react";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
 import ModalPortfolio from "./ModalPortfolio";
-import "../../styles/stylescomponents/CardPortfolio.css";
-import "../../styles/responsive/CardPortfolio.responsive.css";
-import "../../styles/responsive-tablet/Portfolio.responsive-tablet.css";
-import "../../styles/animation/CardPortfolio.animation.css";
+import "../../styles/components/CardPortfolio.css";
 
 function CardPortfolio({ photo, title, text, modalId, photosLoader, animationClass }) {
   const cardRef = useScrollAnimation({ enabled: !!animationClass });

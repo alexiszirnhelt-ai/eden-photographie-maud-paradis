@@ -1,0 +1,174 @@
+.banner {
+  min-height: 25vh;
+  background-image: linear-gradient(rgba(229, 213, 197, 0.5), rgba(229, 213, 197, 0.5)), url("../../assets/images/banner/Laos-viewpoint-photo.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.banner-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #0b3d2e;
+}
+
+.banner-subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.75rem;
+  color: #0b3d2e;
+}
+
+.banner-btn {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #c4a77d;
+  background-color: #0b3d2e;
+  border: 0.25rem solid #c4a77d;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  transition: all 300ms ease;
+}
+
+.banner-btn:hover {
+  background-color: #c4a77d;
+  color: #0b3d2e;
+  box-shadow: 0 0 1rem #c4a77d;
+}
+
+.px-section {
+  padding-left: 6.75rem;
+  padding-right: 6.75rem;
+}
+
+.animate-from-top {
+  opacity: 0;
+  animation: slideFromTop 0.8s ease forwards;
+}
+
+.animate-from-top-delay {
+  opacity: 0;
+  animation: slideFromTop 0.8s ease 0.25s forwards;
+}
+
+.animate-from-bottom {
+  opacity: 0;
+  animation: slideFromBottom 0.8s ease 0.5s forwards;
+}
+
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 2.2rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .presentation {
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+    border-radius: 2rem;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    gap: 1.5rem !important;
+  }
+
+  .presentation-photo-wrapper {
+    width: 220px !important;
+    height: 220px !important;
+  }
+
+  .presentation-photo {
+    width: 214px !important;
+    height: 214px !important;
+  }
+
+  .presentation-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .presentation-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .banner-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .px-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner-title {
+    font-size: 3rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .banner-btn {
+    font-size: 1.1rem;
+  }
+
+  .px-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .presentation {
+    width: 90vw;
+    margin: 3rem auto;
+    border-radius: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .presentation-photo-wrapper {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .presentation-photo {
+    width: 244px !important;
+    height: 244px !important;
+  }
+
+  .presentation-text {
+    text-align: center;
+  }
+}

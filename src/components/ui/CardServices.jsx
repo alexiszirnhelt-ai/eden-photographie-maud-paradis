@@ -1,10 +1,7 @@
 import { memo } from "react";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
 import ModalServices from "./ModalServices";
-import "../../styles/stylescomponents/CardServices.css";
-import "../../styles/responsive/CardServices.responsive.css";
-import "../../styles/responsive-tablet/Services.responsive-tablet.css";
-import "../../styles/animation/CardServices.animation.css";
+import "../../styles/components/CardServices.css";
 
 function CardServices({ photo, title, text, modalId, modalPhoto, carouselImages, section1Title, section1Text, section2Title, section2Text, imageHeight, modalWidth, animationClass }) {
   const cardRef = useScrollAnimation({ enabled: !!animationClass });
