@@ -17,7 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Suspense fallback={null}>
+      <Suspense fallback={<div className="page-loader"><div className="page-loader-spinner"></div></div>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
