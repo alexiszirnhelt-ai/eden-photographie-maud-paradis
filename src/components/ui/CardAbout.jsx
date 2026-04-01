@@ -23,8 +23,9 @@ function CardAbout({ title, children, photoSize = 433, photo = profileImg, objec
           className="presentation-photo"
           style={{ width: wrapperSize - 6, height: wrapperSize - 6, objectPosition }}
           loading="lazy"
+          decoding="async"
         />
-        <img src={circleGold} alt="" className="presentation-photo-circle" loading="lazy" />
+        <img src={circleGold} alt="" className="presentation-photo-circle" loading="lazy" decoding="async" />
       </div>
       <div className={animated ? "animate-from-right" : ""}>
         {title && <h2 className="presentation-title">{title}</h2>}

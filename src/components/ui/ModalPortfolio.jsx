@@ -22,6 +22,7 @@ function ModalPortfolio({ modalId, photos = [] }) {
                   alt={`portfolio-${index}`}
                   className="modal-portfolio-img"
                   loading="lazy"
+                  decoding="async"
                 />
               ))}
             </div>
