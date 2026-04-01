@@ -12,7 +12,7 @@ import "../../styles/responsive-tablet/Contact.responsive-tablet.css";
 import "../../styles/animation/Contact.animation.css";
 
 function Contact() {
-  const { nom, setNom, tel, setTel, email, setEmail, sujet, setSujet, message, setMessage, error, success, sending, handleSubmit } = useContactForm();
+  const { nom, setNom, tel, setTel, email, setEmail, sujet, setSujet, message, setMessage, errors, success, sending, handleSubmit } = useContactForm();
   const sectionRef = useScrollAnimation({
     selector: ".contact-anim-left, .contact-anim-right",
   });
@@ -51,6 +51,7 @@ function Contact() {
                 value={nom}
                 onChange={(e) => setNom(e.target.value)}
               />
+              {errors.nom && <p className="text-danger mb-0" style={{ fontSize: "0.85rem" }}>{errors.nom}</p>}
             </div>
             <div>
               <label className="contact-label mb-1 d-block">
@@ -63,6 +64,7 @@ function Contact() {
                 value={tel}
                 onChange={(e) => setTel(e.target.value)}
               />
+              {errors.tel && <p className="text-danger mb-0" style={{ fontSize: "0.85rem" }}>{errors.tel}</p>}
             </div>
             <div>
               <label className="contact-label mb-1 d-block">
@@ -75,6 +77,7 @@ function Contact() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
+              {errors.email && <p className="text-danger mb-0" style={{ fontSize: "0.85rem" }}>{errors.email}</p>}
             </div>
             <div>
               <label className="contact-label mb-1 d-block">Sujet : <span className="text-danger">*</span></label>
@@ -89,6 +92,7 @@ function Contact() {
                 <option value="devis-cm">Devis community manager</option>
                 <option value="autre">Autre sujet</option>
               </select>
+              {errors.sujet && <p className="text-danger mb-0" style={{ fontSize: "0.85rem" }}>{errors.sujet}</p>}
             </div>
             <div>
               <label className="contact-label mb-1 d-block">Message : <span className="text-danger">*</span></label>
@@ -99,6 +103,7 @@ function Contact() {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
+              {errors.message && <p className="text-danger mb-0" style={{ fontSize: "0.85rem" }}>{errors.message}</p>}
             </div>
             <div>
               <div className="text-center">
@@ -109,11 +114,6 @@ function Contact() {
               <p className="text-danger mt-1 mb-0" style={{ fontSize: "0.9rem" }}>
                 * Champs obligatoires
               </p>
-              {error && (
-                <p className="text-danger mb-0" style={{ fontSize: "0.9rem" }}>
-                  Veuillez remplir tous les champs avant d'envoyer.
-                </p>
-              )}
             </div>
           </form>
         </div>
