@@ -1,3 +1,8 @@
+.portfolio-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
 @media (max-width: 768px) {
   .portfolio-section {
     flex-direction: column;
