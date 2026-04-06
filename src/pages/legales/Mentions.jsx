@@ -75,8 +75,19 @@ function Mentions() {
                   Le responsable publication est une personne physique.
                   <br />
                   <br />
-                  <strong>Hébergeur</strong> : WIX - 40 Port de Tel Aviv, Tel
-                  Aviv-Yafo 6350671 Israël +1 415-639-9034
+                  <strong>Créateur du site</strong> : Lexart Studio – Alexis
+                  ZIRNHELT -{" "}
+                  <a
+                    href="https://lexart-studio.fr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://lexart-studio.fr/
+                  </a>
+                  <br />
+                  <br />
+                  <strong>Hébergeur</strong> : O2Switch – 222-224 Boulevard
+                  Gustave Flaubert, 63000 Clermont-Ferrand, France
                   <br />
                   <br />
                   Ces mentions légales RGPD sont issues du générateur gratuit
