@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.eden-photographie.fr/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.eden-photographie.fr/about</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eden-photographie.fr/services</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eden-photographie.fr/portfolio</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eden-photographie.fr/contact</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.eden-photographie.fr/mentions-legales</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.eden-photographie.fr/politique-de-confidentialite</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.eden-photographie.fr/termes-et-conditions</loc>
+    <priority>0.3</priority>
+  </url>
+</urlset>

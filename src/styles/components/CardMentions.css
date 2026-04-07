@@ -8,7 +8,7 @@
 }
 
 .card-mentions-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", serif;
   font-size: 1.8rem;
   font-weight: 700;
   color: #c4a77d;
@@ -34,7 +34,7 @@
 .card-mentions .accordion-button {
   background-color: #e5d5c5;
   color: #0b3d2e;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", serif;
   font-size: 1.2rem;
   font-weight: 700;
   box-shadow: none;

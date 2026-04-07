@@ -8,20 +8,101 @@
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
 
-// 2. Base
+// 2. Restrict utilities to only what is used
+$utilities: map-merge(
+  $utilities,
+  (
+    // Remove unused utilities
+    "opacity":                null,
+    "overflow":               null,
+    "position":               null,
+    "top":                    null,
+    "bottom":                 null,
+    "start":                  null,
+    "end":                    null,
+    "translate-middle":       null,
+    "border":                 null,
+    "border-top":             null,
+    "border-end":             null,
+    "border-bottom":          null,
+    "border-start":           null,
+    "border-color":           null,
+    "border-width":           null,
+    "border-opacity":         null,
+    "shadow":                 null,
+    "float":                  null,
+    "object-fit":             null,
+    "font-size":              null,
+    "font-style":             null,
+    "font-weight":            null,
+    "line-height":            null,
+    "text-decoration":        null,
+    "text-transform":         null,
+    "white-space":            null,
+    "word-wrap":              null,
+    "color":                  null,
+    "bg-opacity":             null,
+    "background-color":       null,
+    "gradient":               null,
+    "order":                  null,
+    "flex-shrink":            null,
+    "flex-basis":             null,
+    "align-content":          null,
+    "visibility":             null,
+    "z-index":                null,
+    "rounded":                null,
+    "rounded-top":            null,
+    "rounded-end":            null,
+    "rounded-bottom":         null,
+    "rounded-start":          null,
+    "min-viewport-width":     null,
+    "min-viewport-height":    null,
+    "viewport-width":         null,
+    "viewport-height":        null,
+    "height":                 null,
+    "max-height":             null,
+    "max-width":              null,
+    "text-opacity":           null,
+    "link-opacity":           null,
+    "link-offset":            null,
+    "link-underline":         null,
+    "link-underline-opacity":  null,
+    "focus-ring":             null,
+    "icon-link-transform":    null,
+    "ratio":                  null,
+    "fixed-top":              null,
+    "fixed-bottom":           null,
+    "sticky-top":             null,
+    "hstack":                 null,
+    "vstack":                 null,
+    "visually-hidden":        null,
+    "stretched-link":         null,
+    "text-truncation":        null,
+    "vr":                     null,
+    "column-gap":             null,
+    "row-gap":                null,
+    "cursor":                 null,
+    "user-select":            null,
+    "pointer-events":         null,
+    "pe":                     null,
+  )
+);
+
+// 3. Base
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/type"; // list-unstyled (footer)
 
-// 3. Components used
+// 4. Components used
 @import "bootstrap/scss/transitions";  // fade animation for modals
-@import "bootstrap/scss/forms";        // form-control, form-select
+@import "bootstrap/scss/forms/form-control"; // form-control
+@import "bootstrap/scss/forms/form-select";  // form-select
+@import "bootstrap/scss/forms/validation";   // validation states
 @import "bootstrap/scss/close";        // btn-close, btn-close-white
 @import "bootstrap/scss/nav";          // nav-link (required by navbar)
 @import "bootstrap/scss/navbar";       // navbar, navbar-expand-md, collapse
 @import "bootstrap/scss/accordion";    // accordion (legal pages)
 @import "bootstrap/scss/modal";        // modal, modal-dialog, modal-dialog-centered
 
-// 4. Helpers & utilities API
-@import "bootstrap/scss/helpers";      // text-danger, visually-hidden
-@import "bootstrap/scss/utilities/api"; // generates d-flex, flex-column, gap, p, m, text, w utilities
+// 5. Utilities API (no helpers — none used)
+@import "bootstrap/scss/utilities/api"; // generates only the kept utilities

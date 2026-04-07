@@ -5,13 +5,12 @@
 }
 
 .modal-contact-icon {
-  font-size: 3rem;
   color: #c4a77d;
 }
 
 .modal-contact-title {
   color: #c4a77d;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", serif;
 }
 
 .modal-contact-text {
@@ -22,7 +21,7 @@
 .modal-contact-btn {
   background-color: #c4a77d;
   color: #0b3d2e;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", serif;
   font-weight: 700;
   border-radius: 2rem;
   padding: 0.5rem 2rem;

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo/Design-Logo.png";
 import "../../styles/components/Header.css";
@@ -11,6 +12,8 @@ const routes = [
 ];
 
 function Header() {
+  useEffect(() => { import("bootstrap/js/dist/collapse"); }, []);
+
   return (
     <header className="navbar navbar-expand-md" style={{ paddingLeft: "6.75rem", paddingRight: "6.75rem" }}>
       <NavLink to="/" className="navbar-brand">
