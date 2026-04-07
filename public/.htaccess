@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+# Si le fichier ou dossier existe, le servir directement
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Sinon rediriger vers index.html (SPA React Router)
+RewriteRule ^ index.html [L]
