@@ -19,7 +19,7 @@
 }
 
 .contact-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", serif;
   font-size: 2rem;
   font-weight: 700;
   color: #e5d5c5;
@@ -27,7 +27,7 @@
 }
 
 .contact-label {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", serif;
   font-size: 1.1rem;
   font-weight: 700;
   color: #e5d5c5;
@@ -38,7 +38,7 @@
   border: 0.15rem solid #c4a77d;
   border-radius: 0.5rem;
   color: #0b3d2e;
-  font-family: "Cormorant Garamond", sans-serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", sans-serif;
   transition:
     border-color 300ms ease,
     box-shadow 300ms ease;
@@ -46,7 +46,7 @@
 
 .contact-input::placeholder {
   color: #0b3d2e;
-  font-family: "Cormorant Garamond", sans-serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", sans-serif;
 }
 
 .contact-input:focus {
@@ -63,7 +63,7 @@
 }
 
 .contact-btn {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", serif;
   font-size: 1.25rem;
   font-weight: 700;
   color: #c4a77d;

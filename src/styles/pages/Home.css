@@ -9,20 +9,20 @@
 }
 
 .banner-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", serif;
   font-size: 4rem;
   font-weight: 700;
   color: #0b3d2e;
 }
 
 .banner-subtitle {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", serif;
   font-size: 1.75rem;
   color: #0b3d2e;
 }
 
 .banner-btn {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", serif;
   font-size: 1.25rem;
   font-weight: 700;
   color: #c4a77d;

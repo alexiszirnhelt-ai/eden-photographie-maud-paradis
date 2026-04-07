@@ -1,6 +1,7 @@
 .footer {
   background-color: #0b3d2e;
   border-top: 0.25rem solid #c4a77d;
+  min-height: 14rem;
 }
 
 .px-footer {
@@ -10,14 +11,14 @@
 
 .footer-title {
   color: #c4a77d;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", serif;
   font-weight: 700;
 }
 
 .footer-link {
   color: #c4a77d;
   text-decoration: none;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Cormorant Garamond Fallback", serif;
 }
 
 .footer-link:hover {
