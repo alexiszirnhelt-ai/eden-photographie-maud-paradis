@@ -94,13 +94,7 @@ Les images sont automatiquement compressées (qualité 75%) au build via `vite-p
 
 ## Déploiement
 
-Le site est déployé sur **Vercel**. Le fichier `vercel.json` à la racine gère la réécriture des routes pour React Router :
-
-```json
-{
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-}
-```
+Le site est hébergé chez **o2switch**.
 
 ---
 
