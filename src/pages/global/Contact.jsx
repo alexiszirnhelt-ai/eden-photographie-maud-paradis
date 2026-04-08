@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Modal } from "bootstrap";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
 import Banner from "../../components/ui/Banner";
 import Title from "../../components/ui/Title";
@@ -15,10 +16,8 @@ function Contact() {
 
   useEffect(() => {
     if (success) {
-      import("bootstrap/js/dist/modal").then(({ default: Modal }) => {
-        const modal = new Modal(document.getElementById("modalContact"));
-        modal.show();
-      });
+      const modal = new Modal(document.getElementById("modalContact"));
+      modal.show();
     }
   }, [success]);
 
